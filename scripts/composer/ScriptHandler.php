@@ -107,6 +107,8 @@ class ScriptHandler {
           $thunder = $path;
         }
       }
+      // Note that this is deprecated by adding libraries via
+      // http://asset-packagist.org.
       if (isset($thunder)) {
         $thunder = str_replace('{$name}', 'thunder', $thunder);
         $executor = new ProcessExecutor($event->getIO());
